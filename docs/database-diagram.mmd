@@ -1,0 +1,11 @@
+erDiagram
+  USER ||--o{ APPOINTMENT : creates
+  APPOINTMENT }o--o{ SERVICE : includes
+  USER ||--o{ AUDIT_LOG : performs
+  SETTINGS ||--o{ WORKING_HOURS : contains
+  SETTINGS ||--o{ CLOSURE : contains
+  USER { ObjectId id string name string username string passwordHash string role boolean active }
+  APPOINTMENT { ObjectId id string customerName string phone string date string startTime string endTime string status string source }
+  SERVICE { ObjectId id string code string name number durationMinutes string color boolean active }
+  SETTINGS { ObjectId id string key array workingHours array closures }
+  AUDIT_LOG { ObjectId id ObjectId user string userName string action string details date createdAt }
