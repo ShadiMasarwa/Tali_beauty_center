@@ -1383,7 +1383,7 @@ function Calendar({
 }) {
   const today = israelToday();
   const [date, setDate] = useState(today);
-  const [mode, setMode] = useState("day");
+  const [mode, setMode] = useState("'week'");
   const [currentTime, setCurrentTime] = useState(israelTimeHHMM());
   useEffect(() => {
     const refreshClock = () => setCurrentTime(israelTimeHHMM());
