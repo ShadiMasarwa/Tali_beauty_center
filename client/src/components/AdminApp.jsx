@@ -1449,7 +1449,7 @@ function Calendar({
               aria-label={mode === "day" ? "היום הקודם" : "השבוע הקודם"}
               onClick={() => setDate(addDays(date, -step))}
             >
-              ›
+              ‹
             </button>
             <strong>
               {mode === "day"
@@ -1460,7 +1460,7 @@ function Calendar({
               aria-label={mode === "day" ? "היום הבא" : "השבוע הבא"}
               onClick={() => setDate(addDays(date, step))}
             >
-              ‹
+              ›
             </button>
             <button className="today" onClick={() => setDate(today)}>
               היום
