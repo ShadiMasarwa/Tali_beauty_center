@@ -1,5 +1,5 @@
 {
-  "name": "talie-beauty-college-project",
+  "name": "talie-beauty-center-project",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,5 +9,7 @@
     "test": "npm test --prefix server",
     "build": "npm run build --prefix client"
   },
-  "devDependencies": { "concurrently": "^9.2.1" }
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }

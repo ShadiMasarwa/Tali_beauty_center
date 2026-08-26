@@ -20,7 +20,7 @@
     "helmet": "^8.1.0",
     "mongoose": "^9.0.0",
     "socket.io": "^4.8.1",
-    "talie-beauty-college-project": "file:.."
+    "talie-beauty-center-project": "file:.."
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
