@@ -3,4 +3,8 @@ import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
 import "./styles.css";
 import App from "./App.jsx";
-createRoot(document.getElementById("root")).render(<React.StrictMode><App /></React.StrictMode>);
+createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);

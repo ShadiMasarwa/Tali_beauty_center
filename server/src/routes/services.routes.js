@@ -4,7 +4,9 @@ import { requireAuth } from "../middleware/auth.js";
 import { writeAudit } from "../services/audit.js";
 
 const router = Router();
-router.get("/", async (_req, res) => res.json(await Service.find({ active: true }).sort({ createdAt: 1 })));
+router.get("/", async (_req, res) =>
+  res.json(await Service.find({ active: true }).sort({ createdAt: 1 })),
+);
 router.patch("/:id", requireAuth, async (req, res) => {
   const service = await Service.findByIdAndUpdate(
     req.params.id,
